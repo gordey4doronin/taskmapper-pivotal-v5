@@ -28,8 +28,10 @@ module PivotalAPI
   end
 
   class Base < ActiveResource::Base
-    self.site = 'https://www.pivotaltracker.com/services/v3/'
-    self.format = ActiveResource::Formats::XmlFormat
+    self.site = 'https://www.pivotaltracker.com/services/v5/'
+    self.format = ActiveResource::Formats::JsonFormat
+    self.include_root_in_json = false
+
     def self.inherited(base)
       PivotalAPI.resources << base
       super

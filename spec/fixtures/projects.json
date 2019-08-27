@@ -1,0 +1,33 @@
+[
+  {
+    "id": 93790,
+    "name": "TaskMapper",
+    "iteration_length": 1,
+    "week_start_day": "Monday",
+    "point_scale": "0,1,2,3",
+    "account": "Hong Quach",
+    "velocity_scheme": "Average of 3 iterations",
+    "current_velocity": 10,
+    "initial_velocity": 10,
+    "number_of_done_iterations_to_show": 12,
+    "labels": "",
+    "last_activity_at": "2010-07-06T21:47:40Z",
+    "allow_attachments": true,
+    "public": false,
+    "use_https": false,
+    "bugs_and_chores_are_estimatable": false,
+    "commit_mode": false,
+    "memberships": {
+      "membership": {
+        "id": 305546,
+        "person": {
+          "email": "hong.quach@abigfisch.com",
+          "name": "Hong Quach",
+          "initials": "HQ"
+        },
+        "role": "Owner"
+      }
+    },
+    "integrations": ""
+  }
+]

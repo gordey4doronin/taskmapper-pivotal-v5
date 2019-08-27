@@ -20,7 +20,7 @@ describe "TaskMapperPivotal" do
     context "with a correctly authenticated Pivotal API account" do
       before do
         ActiveResource::HttpMock.respond_to do |mock|
-          mock.get '/services/v3/projects.xml', headers, fixture_for('projects'), 200
+          mock.get '/services/v5/projects.json', headers, fixture_for('projects'), 200
         end
       end
 

@@ -7,11 +7,11 @@ describe "TaskMapper::Provider::Pivotal::Project" do
 
   before do
     ActiveResource::HttpMock.respond_to do |mock|
-      mock.get '/services/v3/projects.xml', headers, fixture_for('projects'), 200
-      mock.get '/services/v3/projects/93790.xml', headers, fixture_for('projects/93790'), 200
-      mock.get '/projects/create.xml', headers, fixture_for('projects/93790'), 200
-      mock.put '/services/v3/projects/93790.xml', wheaders, '', 200
-      mock.post '/services/v3/projects.xml', wheaders, '', 201, 'Location' => '/projects/create.xml'
+      mock.get '/services/v5/projects.json', headers, fixture_for('projects'), 200
+      mock.get '/services/v5/projects/93790.json', headers, fixture_for('projects/93790'), 200
+      mock.get '/projects/create.json', headers, fixture_for('projects/93790'), 200
+      mock.put '/services/v5/projects/93790.json', wheaders, '', 200
+      mock.post '/services/v5/projects.json', wheaders, '', 201, 'Location' => '/projects/create.json'
     end
   end
 

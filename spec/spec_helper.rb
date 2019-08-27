@@ -7,7 +7,7 @@ RSpec.configure do |config|
 end
 
 def fixture_for(name)
-  File.read(File.dirname(__FILE__) + '/fixtures/' + name + '.xml')
+  File.read(File.dirname(__FILE__) + '/fixtures/' + name + '.json')
 end
 
 def headers
@@ -15,5 +15,5 @@ def headers
 end
 
 def wheaders
-  headers.merge('Content-Type' => 'application/xml')
+  headers.merge('Content-Type' => 'application/json')
 end

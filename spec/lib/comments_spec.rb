@@ -11,14 +11,14 @@ describe "TaskMapper::Provider::Pivotal::Comment" do
 
   before do
     ActiveResource::HttpMock.respond_to do |mock|
-      mock.get '/services/v3/projects/93790.xml', headers, fixture_for('projects/93790'), 200
-      mock.get '/services/v3/projects/93790/stories.xml', headers, fixture_for('stories'), 200
-      mock.get '/services/v3/projects/93790/stories.xml?filter=', headers, fixture_for('stories'), 200
-      mock.get '/services/v3/projects/93790/stories/4056827.xml', headers, fixture_for('stories/4056827'), 200
-      mock.get '/services/v3/projects/93790/stories/4056827/notes.xml', headers, fixture_for('notes'), 200
-      mock.get '/services/v3/projects/93790/stories/4056827/notes/1946635.xml', headers, fixture_for('notes/1946635'), 200
-      mock.post '/services/v3/projects/93790/stories/4056827/notes.xml', wheaders, fixture_for('notes/1946635'), 200
-      mock.put '/services/v3/projects/93790/stories/4056827.xml', wheaders, '', 200
+      mock.get '/services/v5/projects/93790.json', headers, fixture_for('projects/93790'), 200
+      mock.get '/services/v5/projects/93790/stories.json', headers, fixture_for('stories'), 200
+      mock.get '/services/v5/projects/93790/stories.json?filter=', headers, fixture_for('stories'), 200
+      mock.get '/services/v5/projects/93790/stories/4056827.json', headers, fixture_for('stories/4056827'), 200
+      mock.get '/services/v5/projects/93790/stories/4056827/notes.json', headers, fixture_for('notes'), 200
+      mock.get '/services/v5/projects/93790/stories/4056827/notes/1946635.json', headers, fixture_for('notes/1946635'), 200
+      mock.post '/services/v5/projects/93790/stories/4056827/notes.json', wheaders, fixture_for('notes/1946635'), 200
+      mock.put '/services/v5/projects/93790/stories/4056827.json', wheaders, '', 200
     end
   end
 
